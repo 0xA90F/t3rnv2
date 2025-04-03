@@ -1,1 +1,3 @@
-# t3rnv2
+# t3rnv2 executor
+
+Automatic installation of Executor:
