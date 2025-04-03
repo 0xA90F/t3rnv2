@@ -3,7 +3,7 @@
 # Ensure script is run with bash
 if [ -z "$BASH_VERSION" ]; then
     echo "⚠️  This script must be run with bash, not sh."
-    echo "👉 Try: bash <(wget -O - https://raw.githubusercontent.com/Zikett/t3rn-installer/main/t3rn-installer.sh)"
+    echo "👉 Try: bash <(wget -O - https://raw.githubusercontent.com/0xA90F/t3rnv2/refs/heads/main/t3rnv2.sh)"
     exit 1
 fi
 
@@ -133,6 +133,7 @@ rpc_json+='}'
 
 export RPC_ENDPOINTS="$rpc_json"
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l2rn,blast-sepolia,unichain-sepolia'
+export NETWORKS_DISABLED='blast-sepolia'
 
 # Run the executor
 echo ""
